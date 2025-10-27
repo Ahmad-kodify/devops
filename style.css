@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lilita+One&family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lemon&family=Lilita+One&family=Preahvihear&family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Boogaloo&family=Lemon&family=Lilita+One&family=Preahvihear&family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Boogaloo&family=IBM+Plex+Sans+Arabic&family=Lemon&family=Lilita+One&family=Preahvihear&family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lilita+One&family=Preahvihear&family=Signika:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 25%;
+}
+
+
+.leftsurah img {
+    margin-top: 3px;
+    
+    
+    display: flex;
+    justify-content: left;
+}
+
+.left h3 {
+    position: relative;
+    top: -39px;
+    right: -63px;
+    font-size: 23px;
+    font-family: 'Preahvihear', sans-serif;
+    letter-spacing: 1px;
+}
+
+.purple {
+    color: rgb(0 227 180);
+}
+
+nav ul li {
+    list-style: none;
+    margin: -52px 20px;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    text-align: center;
+    justify-content: right;
+}
+
+header {
+    height: 55px;
+    width: 100%;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+}
+
+nav {
+    font-size: 23px;
+    padding: 6px;
+    color: white;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.container {
+
+    min-height: 75vh;
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 270px;
+    border-radius: 10px;
+    flex-direction: column;
+    opacity: 70%;
+
+}
+
+.logotitle {
+    display: block;
+}
+
+nav .right {
+    font-weight: bold;
+    font-family: 'Signika', sans-serif;
+    margin-top: -20px;
+    margin-right: 60px;
+}
+
+.firstsection {
+    width: 80vw;
+}
+
+.secondsection {
+    width: 100%;
+    background: linear-gradient(to bottom, #00aaff, #ffaa00);
+    display: flex;
+    flex-direction: column;
+}
+
+.topheading {
+    border-radius: 50px 4px 50px 4px;
+    /* Top-Left, Top-Right, Bottom-Right, Bottom-Left */
+    padding: 40px;
+    border: 5px solid white;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), transparent;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 57px;
+    text-align: center;
+    margin-top: 91px;
+    font-size: 30px;
+
+}
+
+.exploreheading {
+    font-family: 'Lemon', cursive;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+.topheading span {
+    margin-top: -20px;
+}
+
+.surahs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftlist {
+    font-family: 'Boogaloo', cursive;
+    font-size: 15px;
+}
+
+.audioitem {
+    width: 520px;
+    margin-top: 25px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    position: relative;
+    left: 90px;
+    border: 3px solid blue;
+    border-radius: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.rightsurah .audioitem {
+    position: relative;
+    left: -80px;
+}
+
+.rightsurah .exploreheading {
+    position: relative;
+    left: -79px;
+}
+
+.audioitem img {
+    width: 84px;
+    height: 39px;
+    border-radius: 12px;
+    margin-left: 17px;
+}
+
+.audio-duration span {
+    margin-right: 10px;
+}
+
+.audio-duration i {
+    padding: 5px;
+    padding-left: 8px;
+    color: #00e3b4;
+    border: 4px solid #00e3b4;
+    border-radius: 48px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+
+.text {
+    position: absolute;
+    top: 51px;
+    left: 179px;
+    display: flex;
+    align-items: center;
+    font-family: 'Boogaloo', cursive;
+    letter-spacing: 1px;
+
+}
+
+@media(min-aspect-ratio:16/9) {
+    .background-clip {
+        width: 100%;
+        height: auto;
+    }
+
+    .background-clip2 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.bottom {
+    background-color: black;
+    border: 2px solid rgb(0 227 180);
+    border-radius: 380px;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    flex-direction: column;
+
+}
+
+.bottom .icons {
+    margin-top: 10px;
+}
+
+.fa-solid {
+    padding: 4px;
+}
+
+#audiobar {
+    cursor: pointer;
+    width: 80vw;
+}
+
+.bottom .icons i {
+    cursor: pointer;
+}
